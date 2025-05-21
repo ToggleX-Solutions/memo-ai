@@ -1,6 +1,6 @@
-# TFCGen - Générateur de Mémoires Académiques avec IA
+# Memo AI - Générateur de Mémoires Académiques avec IA
 
-TFCGen est une application SaaS permettant aux étudiants de générer automatiquement des mémoires de fin d'études (TFC, rapports, mémoires de Master, etc.) avec l'aide de l'intelligence artificielle (GPT-4).
+Memo AI est une application SaaS permettant aux étudiants de générer automatiquement des mémoires de fin d'études (TFC, rapports, mémoires de Master, etc.) avec l'aide de l'intelligence artificielle (GPT-4).
 
 ## 🚀 Fonctionnalités
 
@@ -30,12 +30,12 @@ TFCGen est une application SaaS permettant aux étudiants de générer automatiq
 
 1. **Cloner le dépôt**
    ```bash
-   git clone https://github.com/votre-username/tfcgen.git
-   cd tfcgen
+   git clone https://github.com/votre-username/memo-ai.git
+   cd memo-ai
    ```
 
 2. **Configurer la base de données**
-   - Créer une base de données PostgreSQL nommée `tfcgen`
+   - Créer une base de données PostgreSQL nommée `memo_ai`
    - Mettre à jour les informations de connexion dans `config/config.json`
 
 3. **Configurer l'API OpenAI**
@@ -65,7 +65,7 @@ TFCGen est une application SaaS permettant aux étudiants de générer automatiq
 ## 📁 Structure du projet
 
 ```
-/tfcgen
+/memo-ai
 ├── /backend
 │   ├── /controllers
 │   ├── /routes
@@ -89,8 +89,8 @@ Le fichier `config/config.json` contient toutes les configurations nécessaires 
 {
   "openai_api_key": "YOUR_API_KEY_HERE",
   "port": 3001,
-  "database_url": "postgresql://user:password@localhost:5432/tfcgen",
-  "jwt_secret": "tfcgen_secret_key_change_in_production",
+  "database_url": "postgresql://user:password@localhost:5432/memo_ai",
+  "jwt_secret": "memo_ai_secret_key_change_in_production",
   "cors_origin": "http://localhost:3000",
   "openai_model": "gpt-4",
   "max_tokens": 4000
@@ -122,4 +122,4 @@ MIT
 
 ## 👥 Contribution
 
-Les contributions sont les bienvenues ! N'hésitez pas à ouvrir une issue ou à soumettre une pull request. 
+Les contributions sont les bienvenues ! N'hésitez pas à ouvrir une issue ou à soumettre une pull request.
